@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		016C0B281C2D2F2B008490F6 /* HZPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 016C0B271C2D2F2B008490F6 /* HZPasswordView.m */; };
+		016C0B281C2D2F2B008490F6 /* KNPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 016C0B271C2D2F2B008490F6 /* KNPasswordView.m */; };
 		01E82BEB1C19301C001D1763 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E82BEA1C19301C001D1763 /* main.m */; };
 		01E82BEE1C19301C001D1763 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E82BED1C19301C001D1763 /* AppDelegate.m */; };
 		01E82BF11C19301C001D1763 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E82BF01C19301C001D1763 /* ViewController.m */; };
@@ -28,8 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		016C0B261C2D2F2B008490F6 /* HZPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPasswordView.h; sourceTree = "<group>"; };
-		016C0B271C2D2F2B008490F6 /* HZPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPasswordView.m; sourceTree = "<group>"; };
+		016C0B261C2D2F2B008490F6 /* KNPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNPasswordView.h; sourceTree = "<group>"; };
+		016C0B271C2D2F2B008490F6 /* KNPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPasswordView.m; sourceTree = "<group>"; };
 		01E82BE61C19301C001D1763 /* passwordDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passwordDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E82BEA1C19301C001D1763 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		01E82BEC1C19301C001D1763 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,8 +101,8 @@
 				01E82C031C19313E001D1763 /* Masonry */,
 				01E82BEC1C19301C001D1763 /* AppDelegate.h */,
 				01E82BED1C19301C001D1763 /* AppDelegate.m */,
-				016C0B261C2D2F2B008490F6 /* HZPasswordView.h */,
-				016C0B271C2D2F2B008490F6 /* HZPasswordView.m */,
+				016C0B261C2D2F2B008490F6 /* KNPasswordView.h */,
+				016C0B271C2D2F2B008490F6 /* KNPasswordView.m */,
 				01E82BEF1C19301C001D1763 /* ViewController.h */,
 				01E82BF01C19301C001D1763 /* ViewController.m */,
 				01E82BF21C19301C001D1763 /* Main.storyboard */,
@@ -231,7 +231,7 @@
 				01E82BEE1C19301C001D1763 /* AppDelegate.m in Sources */,
 				01E82C201C19313E001D1763 /* MASConstraint.m in Sources */,
 				01E82C281C19313E001D1763 /* ViewController+MASAdditions.m in Sources */,
-				016C0B281C2D2F2B008490F6 /* HZPasswordView.m in Sources */,
+				016C0B281C2D2F2B008490F6 /* KNPasswordView.m in Sources */,
 				01E82C221C19313E001D1763 /* MASLayoutConstraint.m in Sources */,
 				01E82C251C19313E001D1763 /* NSArray+MASAdditions.m in Sources */,
 				01E82C241C19313E001D1763 /* MASViewConstraint.m in Sources */,

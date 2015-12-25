@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol HZPasswordViewProtocol <NSObject>
+@protocol KNPasswordViewProtocol <NSObject>
 
 - (void)didUpdatePass:(id)text inView:(UIView *)view;
 
 @end
 
-@interface HZPasswordView : UIView
+@interface KNPasswordView : UIView
 
-@property (weak, nonatomic) id <HZPasswordViewProtocol> delegate;
+@property (weak, nonatomic) id <KNPasswordViewProtocol> delegate;
 
 - (instancetype)initWithPasswordCount:(NSInteger)count;
 

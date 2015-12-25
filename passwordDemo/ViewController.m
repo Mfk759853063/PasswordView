@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "HZPasswordView.h"
+#import "KNPasswordView.h"
 
-@interface ViewController()<HZPasswordViewProtocol>
+@interface ViewController()<KNPasswordViewProtocol>
 
 @end
 
@@ -19,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    HZPasswordView *view = [[HZPasswordView alloc] initWithPasswordCount:6];
+    KNPasswordView *view = [[KNPasswordView alloc] initWithPasswordCount:6];
     view.delegate = self;
     view.frame = CGRectMake(0, 0, 300, 40);
     view.center = self.view.center;
