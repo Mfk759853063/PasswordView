@@ -12,6 +12,8 @@
 
 - (void)didUpdatePass:(id)text inView:(UIView *)view;
 
+- (UIKeyboardType)passwordKeyBoardType;
+
 @end
 
 @interface KNPasswordView : UIView

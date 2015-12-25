@@ -20,10 +20,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     KNPasswordView *view = [[KNPasswordView alloc] initWithPasswordCount:6];
-    view.delegate = self;
     view.frame = CGRectMake(0, 0, 300, 40);
     view.center = self.view.center;
     [self.view addSubview:view];
+    view.delegate = self;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -37,6 +37,10 @@
 
 - (void)didUpdatePass:(id)text inView:(UIView *)view {
     NSLog(@"%@",text);
+}
+
+- (UIKeyboardType)passwordKeyBoardType {
+    return UIKeyboardTypeDefault;
 }
 
 @end

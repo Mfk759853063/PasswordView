@@ -97,6 +97,11 @@
     self.realTF = tf;
 }
 
+- (void)setDelegate:(id<KNPasswordViewProtocol>)delegate {
+    _delegate = delegate;
+    self.realTF.keyboardType = self.delegate && [self.delegate respondsToSelector:@selector(passwordKeyBoardType)]?[self.delegate passwordKeyBoardType ]:UIKeyboardTypeNumberPad;
+}
+
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     if([string isEqualToString:@"\n"])
     {
