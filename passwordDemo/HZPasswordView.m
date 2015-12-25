@@ -19,19 +19,19 @@
 
 @implementation HZPasswordView
 
-- (instancetype)initWithPasswordCount:(NSInteger)count {
-    self = [super init];
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
     if (self) {
-        self.passwordCount = count;
+        self.passwordCount = 6;
         [self setup];
     }
     return self;
 }
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
+- (instancetype)initWithPasswordCount:(NSInteger)count {
+    self = [super init];
     if (self) {
-        self.passwordCount = 6;
+        self.passwordCount = count;
         [self setup];
     }
     return self;
@@ -51,6 +51,7 @@
     self.layer.borderColor = UIColorFromRGB(0xeaeaea).CGColor;
     self.layer.borderWidth = 1.0f;
     self.layer.cornerRadius = 3.0f;
+    self.clipsToBounds = YES;
     self.buttonsContainer = @[].mutableCopy;
     
     UIView *preVLineView = nil;
@@ -92,7 +93,6 @@
     tf.autocapitalizationType = UITextAutocapitalizationTypeNone;
     tf.keyboardType = UIKeyboardTypeNumberPad;
     [self addSubview:tf];
-    [tf becomeFirstResponder];
     [tf addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     self.realTF = tf;
 }
@@ -118,6 +118,10 @@
     {
         return YES;
     }
+}
+
+- (void)showKeyboard:(BOOL)show {
+    show?[self.realTF becomeFirstResponder]:[self.realTF resignFirstResponder];
 }
 
 - (void)itemDidTaped:(id)sender {
